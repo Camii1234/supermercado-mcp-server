@@ -24,7 +24,7 @@ public class Tarea {
 
     public Tarea(){}
 
-    public Tarea(String titulo, String Fecha, Boolean completado ){
+    public Tarea(String titulo, String fecha, Boolean completado ){
         this.titulo=titulo;
         this.fecha=fecha;
         this.completado=completado;

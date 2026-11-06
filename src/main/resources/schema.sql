@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS tarea (
 
 -- Datos de ejemplo opcionales
 INSERT INTO tarea (titulo, fecha, completado, version) VALUES
-                                                           ('Preparar charla MCP',   '2026-10-23', b'0', 0),
-                                                           ('Revisar slides',        '2026-10-24', b'0', 0),
-                                                           ('Probar demo en vivo',   '2026-10-25', b'1', 0);
+                                                           ('Preparar charla MCP',   '2026-11-07', b'0', 0),
+                                                           ('Revisar slides',        '2026-11-08', b'0', 0),
+                                                           ('Probar demo en vivo',   '2026-11-09', b'1', 0);
 														   
 														 

@@ -1,6 +1,6 @@
-package com.example.labmcp;
+package com.udea.supermercadomcp;
 
-import com.example.labmcp.service.TareaToolsService;
+import com.udea.supermercadomcp.service.SupermercadoToolsService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.boot.SpringApplication;
@@ -8,15 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class LabmcpApplication {
+public class SupermercadoMcpApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LabmcpApplication.class, args);
+		SpringApplication.run(SupermercadoMcpApplication.class, args);
 	}
 
-
+	/** Publica los métodos @Tool de SupermercadoToolsService como herramientas del servidor MCP. */
 	@Bean
-	public ToolCallbackProvider tareaTools(TareaToolsService tools){
+	public ToolCallbackProvider supermercadoTools(SupermercadoToolsService tools) {
 		return MethodToolCallbackProvider.builder()
 				.toolObjects(tools)
 				.build();

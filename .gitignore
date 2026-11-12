@@ -4,6 +4,24 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Logs ###
+logs/
+*.log
+
+### Variables de entorno y secretos ###
+.env
+.env.*
+*.env
+
+### Temporales ###
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
 ### STS ###
 .apt_generated
 .classpath
